@@ -19,4 +19,14 @@
         completions."
     </string>
 
+    <!-- Strings related to homepage_caregiver -->
+    <string name="patient_info">病人信息</string>
+    <string name="news">新聞活動</string>
+    <string name="share_location">共享位置</string>
+    <string name="reminder">提醒事項</string>
+    <string name="lost">病人走失</string>
+    <string name="logout">退出登錄</string>
+
+    <string name="title_activity_maps">Map</string>
+
 </resources>

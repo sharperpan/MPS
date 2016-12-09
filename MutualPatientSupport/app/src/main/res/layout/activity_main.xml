@@ -16,8 +16,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="60dp"
-        android:background="@drawable/icon"
-        />
+        android:background="@drawable/icon" />
 
     <Button
         android:layout_width="160dp"
