@@ -54,7 +54,7 @@ public class LoginActivity extends AppCompatActivity {
                 System.out.println("start to connect");
                 client.removeAllHeaders();
                 client.addHeader("Content-Type", "application/json");
-                client.post(getApplicationContext(), "http://mspcognix.azurewebsites.net/api/Common", se, "application/json", new AsyncHttpResponseHandler(
+                client.post(getApplicationContext(), "http://mspcognix.azurewebsites.net/api/Common/Login", se, "application/json", new AsyncHttpResponseHandler(
                 ) {
                     @Override
                     public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
