@@ -79,7 +79,9 @@ public class LoginActivity extends AppCompatActivity {
                             System.out.println("Server error");
                             return;
                         }
-                        System.out.println("it is workable");
+                        Intent intent = new Intent();
+                        intent.setClass(LoginActivity.this, Homepage_cgActivity.class);
+                        LoginActivity.this.startActivity(intent);
                         //To Do....Cookies,Redirect
 
                     }

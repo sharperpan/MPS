@@ -28,5 +28,12 @@
     <string name="logout">退出登錄</string>
 
     <string name="title_activity_maps">Map</string>
+    <string name="title_activity_patient_information">patient_informationActivity</string>
+    <string name="title_activity_news_detail">news_detailActivity</string>
+    <string name="title_activity_reminder">reminderActivity</string>
+    <string name="title_activity_reminder_detail_pa">reminder_detail_paActivity</string>
+    <string name="title_activity_reminder_detail_cg">reminder_detail_cgActivity</string>
+    <string name="title_activity_go_home">Map</string>
+    <string name="title_activity_contact_">contact_Activity</string>
 
 </resources>
