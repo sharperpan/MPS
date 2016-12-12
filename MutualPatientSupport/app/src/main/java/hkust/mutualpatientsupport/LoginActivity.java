@@ -9,11 +9,16 @@ import android.widget.Button;
 //Add the following imports to your libraries
 import com.loopj.android.http.*;
 
+import android.content.Context;
+
 import org.json.*;
 
 import cz.msebera.android.httpclient.Header;
 import cz.msebera.android.httpclient.entity.ContentType;
 import cz.msebera.android.httpclient.entity.StringEntity;
+import cz.msebera.android.httpclient.protocol.BasicHttpContext;
+import cz.msebera.android.httpclient.protocol.HttpContext;
+import cz.msebera.android.httpclient.protocol.SyncBasicHttpContext;
 
 import com.google.gson.*;
 
@@ -49,8 +54,7 @@ public class LoginActivity extends AppCompatActivity {
                 System.out.println("start to connect");
                 client.removeAllHeaders();
                 client.addHeader("Content-Type", "application/json");
-                client.post(null, "http://mspcognix.azurewebsites.net/api/Common", se, "application/json", new AsyncHttpResponseHandler(
-                        //client.post("http://mspcognix.azurewebsites.net/api/Caregiver", params, new AsyncHttpResponseHandler(
+                client.post(getApplicationContext(), "http://mspcognix.azurewebsites.net/api/Common", se, "application/json", new AsyncHttpResponseHandler(
                 ) {
                     @Override
                     public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
