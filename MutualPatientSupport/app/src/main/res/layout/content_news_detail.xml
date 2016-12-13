@@ -13,4 +13,10 @@
     tools:context="hkust.mutualpatientsupport.news_detailActivity"
     tools:showIn="@layout/activity_news_detail">
 
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/webview" />
 </RelativeLayout>

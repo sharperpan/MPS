@@ -69,9 +69,6 @@
             android:label="@string/title_activity_reminder_detail_cg"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".go_homeActivity"
-            android:label="@string/title_activity_go_home" />
-        <activity
             android:name=".contact_Activity"
             android:label="@string/title_activity_contact_"
             android:theme="@style/AppTheme"></activity>
