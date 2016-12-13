@@ -34,6 +34,7 @@
     <string name="title_activity_reminder_detail_pa">reminder_detail_paActivity</string>
     <string name="title_activity_reminder_detail_cg">reminder_detail_cgActivity</string>
     <string name="title_activity_go_home">Map</string>
-    <string name="title_activity_contact_">contact_Activity</string>
+    <string name="title_activity_contact_">緊急聯絡</string>
+    <string name="title_activity_name_card">病人信息</string>
 
 </resources>

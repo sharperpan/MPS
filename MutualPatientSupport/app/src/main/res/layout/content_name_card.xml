@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/content_contact_"
+    android:id="@+id/content_name_card"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
@@ -10,11 +10,11 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="hkust.mutualpatientsupport.contact_Activity"
-    tools:showIn="@layout/activity_contact_">
+    tools:context="hkust.mutualpatientsupport.NameCardActivity"
+    tools:showIn="@layout/activity_name_card">
 
     <android.support.v7.widget.CardView
-        android:id="@+id/cardview_contact"
+        android:id="@+id/cardview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -38,7 +38,7 @@
             android:text="姓名:" />
 
         <TextView
-            android:id="@+id/cardview_txtName_contact"
+            android:id="@+id/cardview_txtName"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:layout_marginLeft="35dp"
@@ -53,7 +53,7 @@
             android:text="年齡:" />
 
         <TextView
-            android:id="@+id/cardview_age_contact"
+            android:id="@+id/cardview_age"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:layout_marginLeft="185dp"
@@ -68,7 +68,7 @@
             android:text="住址:" />
 
         <TextView
-            android:id="@+id/cardview_address_contact"
+            android:id="@+id/cardview_address"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginLeft="35dp"
@@ -78,30 +78,66 @@
     </android.support.v7.widget.CardView>
 
 
-    <Button
-        android:id="@+id/button_cardview_Callcaregiver"
-        android:layout_width="140dp"
-        android:layout_height="120dp"
-        android:layout_alignParentBottom="true"
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardview_caregiver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="20dp"
+        android:layout_below="@+id/cardview"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="10dp"
-        android:fontFamily="cursive"
-        android:textColor="#ffffff"
-        android:textSize="26dp"
-        android:background="@drawable/shape"
-        android:text="呼叫護理員" />
+        android:layout_marginTop="30dp">
 
-    <Button
-        android:id="@+id/button_cardview_CallHospital"
-        android:layout_width="140dp"
-        android:layout_height="130dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="10dp"
-        android:fontFamily="cursive"
-        android:textColor="#ffffff"
-        android:textSize="26dp"
-        android:background="@drawable/shape"
-        android:text="呼叫醫院"
-        android:layout_alignTop="@+id/cardview_Callcaregiver" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="10dp"
+            android:text="護理員資料:" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="40dp"
+            android:text="姓名:" />
+
+        <TextView
+            android:id="@+id/cardview_txtName_caregiver"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="40dp"
+            android:text="姓名佔位符號" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="40dp"
+            android:text="電話:" />
+
+        <TextView
+            android:id="@+id/cardview_phone_caregiver"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="185dp"
+            android:layout_marginTop="40dp"
+            android:text="電話佔位符號" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="70dp"
+            android:text="住址:" />
+
+        <TextView
+            android:id="@+id/cardview_address_caregiver"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="70dp"
+            android:text="我是地址佔位符號" />
+
+    </android.support.v7.widget.CardView>
 </RelativeLayout>
