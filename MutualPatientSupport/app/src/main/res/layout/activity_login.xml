@@ -14,24 +14,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/imageViewLogin"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="60dp"
         android:background="@drawable/icon"
-        />
-
-    <Button
-        android:layout_width="160dp"
-        android:layout_height="wrap_content"
-        android:text="@string/action_sign_in"
-        android:id="@+id/button_login"
-        android:fontFamily="cursive"
-        android:includeFontPadding="true"
-        android:background="@color/buttonColor"
-        android:textColor="#ffffff"
-        android:textSize="30dp"
-        android:layout_marginTop="43dp"
-        android:layout_below="@+id/imageViewLogin"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
     <Button
@@ -44,7 +28,45 @@
         android:background="#00a2ff"
         android:textColor="#ffffff"
         android:textSize="30dp"
-        android:layout_marginTop="43dp"
-        android:layout_below="@+id/button_login"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="@string/action_sign_in"
+        android:id="@+id/button_login"
+        android:fontFamily="cursive"
+        android:includeFontPadding="true"
+        android:background="@color/buttonColor"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        android:layout_marginBottom="68dp"
+        android:layout_alignBottom="@+id/button_register"
+        android:layout_alignStart="@+id/button_register" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword|numberPassword"
+        android:ems="10"
+        android:layout_marginTop="24dp"
+        android:id="@+id/pw"
+        android:layout_below="@+id/account"
+        android:layout_alignStart="@+id/account"
+        android:layout_alignEnd="@+id/account" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:layout_marginTop="41dp"
+        android:id="@+id/account"
+        android:hint="222@mail.com"
+        android:text="222@mail.com"
+        android:layout_below="@+id/imageViewLogin"
+        android:layout_alignStart="@+id/imageViewLogin"
+        android:layout_alignEnd="@+id/imageViewLogin" />
 </RelativeLayout>
