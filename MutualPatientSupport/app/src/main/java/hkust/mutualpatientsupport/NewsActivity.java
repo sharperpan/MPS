@@ -64,14 +64,8 @@ public class NewsActivity extends AppCompatActivity {
         List<String> data = new ArrayList<>();
         data.add("老年人應該多運動");
         data.add("六款養生茶");
-        data.add("百度");
-        data.add("谷歌");
-        data.add("六款養生茶");
-        data.add("百度");
-        data.add("谷歌");
-        data.add("六款養生茶");
-        data.add("百度");
-        data.add("谷歌");
+        data.add("新闻样例1");
+        data.add("新闻样例2");
         return data;
     }
 
