@@ -41,7 +41,7 @@
             android:id="@+id/cardview_txtName_contact"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
-            android:layout_marginLeft="35dp"
+            android:layout_marginLeft="45dp"
             android:layout_marginTop="250dp"
             android:text="姓名佔位符號" />
 
@@ -56,7 +56,7 @@
             android:id="@+id/cardview_age_contact"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
-            android:layout_marginLeft="185dp"
+            android:layout_marginLeft="195dp"
             android:layout_marginTop="250dp"
             android:text="年齡佔位" />
 
@@ -71,7 +71,7 @@
             android:id="@+id/cardview_address_contact"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginLeft="35dp"
+            android:layout_marginLeft="45dp"
             android:layout_marginTop="280dp"
             android:text="我是地址佔位符號" />
 
@@ -81,7 +81,6 @@
     <Button
         android:id="@+id/button_cardview_Callcaregiver"
         android:layout_width="140dp"
-        android:layout_height="120dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
         android:layout_marginStart="10dp"
@@ -89,7 +88,8 @@
         android:textColor="#ffffff"
         android:textSize="26dp"
         android:background="@drawable/shape"
-        android:text="呼叫護理員" />
+        android:text="呼叫護理員"
+        android:layout_height="130dp" />
 
     <Button
         android:id="@+id/button_cardview_CallHospital"

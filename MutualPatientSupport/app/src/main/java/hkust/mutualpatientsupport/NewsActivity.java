@@ -26,6 +26,8 @@ public class NewsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_news);
         ViewFlipper flipper = (ViewFlipper) findViewById(R.id.viewFlipper);
         flipper.startFlipping();
+        news_url.add("https://kknews.cc/zh-hk/health/235apz.html");
+        news_url.add("http://www.doheal.com/article/5151.html");
         news_url.add("http://www.baidu.com");
         news_url.add("http://www.google.com");
         new1 =(ImageButton) findViewById(R.id.imageButton_new1);
@@ -64,10 +66,10 @@ public class NewsActivity extends AppCompatActivity {
     private List<String> getData(){
 
         List<String> data = new ArrayList<>();
+        data.add("老年人應該多運動");
+        data.add("六款養生茶");
         data.add("百度");
         data.add("谷歌");
-        data.add("测试数据3");
-        data.add("测试数据4");
 
         return data;
     }

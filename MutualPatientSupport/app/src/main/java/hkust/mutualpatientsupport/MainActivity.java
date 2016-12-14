@@ -17,6 +17,14 @@ public class MainActivity extends AppCompatActivity {
         button_cg.setOnClickListener(new cgButtonListener());
         button_pa = (Button)findViewById(R.id.button_direct_pt);
         button_pa.setOnClickListener(new ptButtonListener());
+        ((Button) findViewById(R.id.button_direct_vi)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setClass(MainActivity.this, NewsActivity.class);
+                MainActivity.this.startActivity(intent);
+            }
+        });
     }
     class cgButtonListener implements View.OnClickListener {
         public void onClick(View v) {

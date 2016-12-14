@@ -32,5 +32,37 @@ public class Homepage_paActivity extends AppCompatActivity {
                 Homepage_paActivity.this.startActivity(intent);
             }
         });
+        ((Button) findViewById(R.id.button_news)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setClass(Homepage_paActivity.this, NewsActivity.class);
+                Homepage_paActivity.this.startActivity(intent);
+            }
+        });
+        ((Button) findViewById(R.id.button_location)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setClass(Homepage_paActivity.this, MapsActivity.class);
+                Homepage_paActivity.this.startActivity(intent);
+            }
+        });
+        ((Button) findViewById(R.id.button_gohome)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setClass(Homepage_paActivity.this, MapsActivity.class);
+                Homepage_paActivity.this.startActivity(intent);
+            }
+        });
+        ((Button) findViewById(R.id.button_reminder)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setClass(Homepage_paActivity.this, reminder_detail_cgActivity.class);
+                Homepage_paActivity.this.startActivity(intent);
+            }
+        });
     }
 }

@@ -35,28 +35,22 @@
             android:layout_height="50dp"
             android:layout_marginLeft="1dp"
             android:layout_marginTop="250dp"
+            android:id="@+id/cardview_tv_name"
             android:text="姓名:" />
-
-        <TextView
-            android:id="@+id/cardview_txtName"
-            android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:layout_marginLeft="35dp"
-            android:layout_marginTop="250dp"
-            android:text="姓名佔位符號" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:layout_marginLeft="150dp"
             android:layout_marginTop="250dp"
+            android:id="@+id/cardview_tv_age"
             android:text="年齡:" />
 
         <TextView
             android:id="@+id/cardview_age"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
-            android:layout_marginLeft="185dp"
+            android:layout_marginLeft="190dp"
             android:layout_marginTop="250dp"
             android:text="年齡佔位" />
 
@@ -71,9 +65,17 @@
             android:id="@+id/cardview_address"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginLeft="35dp"
+            android:layout_marginLeft="40dp"
             android:layout_marginTop="280dp"
             android:text="我是地址佔位符號" />
+
+        <TextView
+            android:id="@+id/cardview_txtName"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="250dp"
+            android:text="姓名佔位符號" />
 
     </android.support.v7.widget.CardView>
 
@@ -105,7 +107,7 @@
             android:id="@+id/cardview_txtName_caregiver"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
-            android:layout_marginLeft="35dp"
+            android:layout_marginLeft="40dp"
             android:layout_marginTop="40dp"
             android:text="姓名佔位符號" />
 
@@ -120,7 +122,7 @@
             android:id="@+id/cardview_phone_caregiver"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
-            android:layout_marginLeft="185dp"
+            android:layout_marginLeft="190dp"
             android:layout_marginTop="40dp"
             android:text="電話佔位符號" />
 
@@ -135,7 +137,7 @@
             android:id="@+id/cardview_address_caregiver"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginLeft="35dp"
+            android:layout_marginLeft="40dp"
             android:layout_marginTop="70dp"
             android:text="我是地址佔位符號" />
 

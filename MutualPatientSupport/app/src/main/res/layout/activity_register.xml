@@ -1,25 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_register"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="hkust.mutualpatientsupport.RegisterActivity">
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="87dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true">
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toolbar">
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true">
 
             <TextView
                 android:text="長者信息"
@@ -28,7 +26,16 @@
                 android:id="@+id/tv_1"
                 android:textSize="28sp"
                 android:layout_alignParentTop="true"
-                android:layout_centerHorizontal="true" />
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/icon"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/tv_1"
+                android:id="@+id/old_pic" />
 
             <TextView
                 android:text="名字："
@@ -36,13 +43,13 @@
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
                 android:id="@+id/tv_2"
-                android:layout_below="@+id/tv_1"
-                android:layout_alignParentStart="true" />
+                android:layout_below="@+id/old_pic"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused" />
 
             <EditText
                 android:ems="10"
                 android:inputType="textPersonName"
-                tools:text="name"
                 android:id="@+id/tv_3"
                 android:scrollbarSize="108dp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
@@ -52,7 +59,8 @@
                 android:layout_alignBaseline="@+id/tv_2"
                 android:layout_alignBottom="@+id/tv_2"
                 android:layout_toEndOf="@+id/tv_2"
-                android:textColor="?attr/colorControlHighlight" />
+                android:textColor="?attr/actionMenuTextColor"
+                android:hint="first name" />
 
             <TextView
                 android:text="姓氏："
@@ -62,12 +70,13 @@
                 android:id="@+id/tv_4"
                 android:layout_below="@+id/tv_2"
                 android:layout_alignParentStart="true"
-                android:layout_marginTop="11dp" />
+                android:layout_marginTop="11dp"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused" />
 
             <EditText
                 android:ems="10"
                 android:inputType="textPersonName"
-                tools:text="last name"
+                android:hint="last name"
                 android:id="@+id/tv_5"
                 android:scrollbarSize="108dp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
@@ -77,7 +86,7 @@
                 android:layout_alignBaseline="@+id/tv_4"
                 android:layout_alignBottom="@+id/tv_4"
                 android:layout_toEndOf="@+id/tv_4"
-                android:textColor="?attr/colorControlHighlight" />
+                android:textColor="?attr/actionMenuTextColor" />
 
             <TextView
                 android:text="生日："
@@ -93,7 +102,7 @@
             <EditText
                 android:ems="10"
                 android:inputType="textPersonName"
-                tools:text="Date of birth"
+                android:hint="Date of birth"
                 android:id="@+id/tv_7"
                 android:scrollbarSize="108dp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
@@ -103,7 +112,7 @@
                 android:layout_alignBaseline="@+id/tv_6"
                 android:layout_alignBottom="@+id/tv_6"
                 android:layout_toEndOf="@+id/tv_6"
-                android:textColor="?attr/colorControlHighlight" />
+                android:textColor="?attr/actionMenuTextColor" />
 
             <TextView
                 android:text="性別："
@@ -119,7 +128,7 @@
             <EditText
                 android:ems="10"
                 android:inputType="textPersonName"
-                tools:text="男或女"
+                android:hint="man or woman"
                 android:id="@+id/tv_9"
                 android:scrollbarSize="108dp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
@@ -129,7 +138,7 @@
                 android:layout_alignBaseline="@+id/tv_8"
                 android:layout_alignBottom="@+id/tv_8"
                 android:layout_toEndOf="@+id/tv_8"
-                android:textColor="?attr/colorControlHighlight" />
+                android:textColor="?attr/actionMenuTextColor" />
 
             <TextView
                 android:text="座／樓／室："
@@ -145,7 +154,7 @@
             <EditText
                 android:ems="10"
                 android:inputType="textPersonName"
-                tools:text="address"
+                android:hint="address"
                 android:id="@+id/tv_11"
                 android:scrollbarSize="108dp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
@@ -155,7 +164,7 @@
                 android:layout_alignBaseline="@+id/tv_10"
                 android:layout_alignBottom="@+id/tv_10"
                 android:layout_toEndOf="@+id/tv_10"
-                android:textColor="?attr/colorControlHighlight" />
+                android:textColor="?attr/actionMenuTextColor" />
 
             <TextView
                 android:text="街道地區："
@@ -171,7 +180,7 @@
             <EditText
                 android:ems="10"
                 android:inputType="textPersonName"
-                tools:text="address"
+                android:hint="address"
                 android:id="@+id/tv_13"
                 android:scrollbarSize="108dp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
@@ -181,7 +190,7 @@
                 android:layout_alignBaseline="@+id/tv_12"
                 android:layout_alignBottom="@+id/tv_12"
                 android:layout_toEndOf="@+id/tv_12"
-                android:textColor="?attr/colorControlHighlight" />
+                android:textColor="?attr/actionMenuTextColor" />
 
             <TextView
                 android:text="聯絡電話："
@@ -197,7 +206,7 @@
             <EditText
                 android:ems="10"
                 android:inputType="textPersonName"
-                tools:text="phone"
+                android:hint="phone"
                 android:id="@+id/tv_15"
                 android:scrollbarSize="108dp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
@@ -207,7 +216,7 @@
                 android:layout_alignBaseline="@+id/tv_14"
                 android:layout_alignBottom="@+id/tv_14"
                 android:layout_toEndOf="@+id/tv_14"
-                android:textColor="?attr/colorControlHighlight" />
+                android:textColor="?attr/actionMenuTextColor" />
 
             <TextView
                 android:text="病情等級："
@@ -223,7 +232,7 @@
             <EditText
                 android:ems="10"
                 android:inputType="textPersonName"
-                tools:text="level"
+                android:hint="level"
                 android:id="@+id/tv_17"
                 android:scrollbarSize="108dp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
@@ -233,20 +242,277 @@
                 android:layout_alignBaseline="@+id/tv_16"
                 android:layout_alignBottom="@+id/tv_16"
                 android:layout_toEndOf="@+id/tv_16"
-                android:textColor="?attr/colorControlHighlight" />
+                android:textColor="?attr/actionMenuTextColor" />
 
             <TextView
                 android:text="護理者信息"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="20sp"
+                android:textSize="28sp"
                 android:id="@+id/tv_18"
-                android:layout_below="@+id/tv_16"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:layout_below="@+id/tv_17"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:text="名字："
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:id="@+id/tv_19"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:layout_below="@+id/tv_18"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="first name"
+                android:id="@+id/tv_20"
+                android:scrollbarSize="108dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_19"
+                android:layout_alignBottom="@+id/tv_19"
+                android:layout_toEndOf="@+id/tv_19"
+                android:textColor="?attr/actionMenuTextColor" />
+
+            <TextView
+                android:text="姓氏："
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:id="@+id/tv_21"
+                android:layout_below="@+id/tv_19"
                 android:layout_alignParentStart="true"
                 android:layout_marginTop="11dp"
                 android:textColor="@color/common_google_signin_btn_text_dark_focused" />
 
+            <EditText
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="last name"
+                android:id="@+id/tv_22"
+                android:scrollbarSize="108dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_21"
+                android:layout_alignBottom="@+id/tv_21"
+                android:layout_toEndOf="@+id/tv_21"
+                android:textColor="?attr/actionMenuTextColor" />
+
+            <TextView
+                android:text="性別："
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:id="@+id/tv_23"
+                android:layout_below="@+id/tv_21"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="11dp"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+            <EditText
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="man or woman"
+                android:id="@+id/tv_24"
+                android:scrollbarSize="108dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_23"
+                android:layout_alignBottom="@+id/tv_23"
+                android:layout_toEndOf="@+id/tv_23"
+                android:textColor="?attr/actionMenuTextColor" />
+
+            <TextView
+                android:text="電郵地址："
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:id="@+id/tv_25"
+                android:layout_below="@+id/tv_23"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="11dp"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+            <EditText
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="email"
+                android:id="@+id/tv_26"
+                android:scrollbarSize="108dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_25"
+                android:layout_alignBottom="@+id/tv_25"
+                android:layout_toEndOf="@+id/tv_25"
+                android:textColor="?attr/actionMenuTextColor" />
+
+            <TextView
+                android:text="聯絡電話："
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:id="@+id/tv_27"
+                android:layout_below="@+id/tv_25"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="11dp"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+            <EditText
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="phone"
+                android:id="@+id/tv_28"
+                android:scrollbarSize="108dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_27"
+                android:layout_alignBottom="@+id/tv_27"
+                android:layout_toEndOf="@+id/tv_27"
+                android:textColor="?attr/actionMenuTextColor" />
+
+            <TextView
+                android:text="登入密碼："
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:id="@+id/tv_29"
+                android:layout_below="@+id/tv_27"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="11dp"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+            <EditText
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="password"
+                android:id="@+id/tv_30"
+                android:scrollbarSize="108dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_29"
+                android:layout_alignBottom="@+id/tv_29"
+                android:layout_toEndOf="@+id/tv_29"
+                android:textColor="?attr/actionMenuTextColor" />
+
+            <TextView
+                android:text="確認密碼："
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:id="@+id/tv_31"
+                android:layout_below="@+id/tv_29"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="11dp"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"  />
+
+            <EditText
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="password"
+                android:id="@+id/tv_32"
+                android:scrollbarSize="108dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_31"
+                android:layout_alignBottom="@+id/tv_31"
+                android:layout_toEndOf="@+id/tv_31"
+                android:textColor="?attr/actionMenuTextColor" />
+
+            <TextView
+                android:text="座／樓／室："
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:id="@+id/tv_33"
+                android:layout_below="@+id/tv_31"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="11dp"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+            <EditText
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="address"
+                android:id="@+id/tv_34"
+                android:scrollbarSize="108dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_33"
+                android:layout_alignBottom="@+id/tv_33"
+                android:layout_toEndOf="@+id/tv_33"
+                android:textColor="?attr/actionMenuTextColor" />
+
+            <TextView
+                android:text="街道地區："
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:id="@+id/tv_35"
+                android:layout_below="@+id/tv_33"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="11dp"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+            <EditText
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="address"
+                android:id="@+id/tv_36"
+                android:scrollbarSize="108dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_35"
+                android:layout_alignBottom="@+id/tv_35"
+                android:layout_toEndOf="@+id/tv_35"
+                android:textColor="?attr/actionMenuTextColor"/>
+
+            <Button
+                android:text="提交"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button1"
+                android:layout_below="@+id/tv_35"
+                android:layout_centerHorizontal="true"
+                android:textSize="24sp"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:elevation="9dp" />
+
 
         </RelativeLayout>
+
     </ScrollView>
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorButtonNormal"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:buttonGravity="top|bottom"
+        app:title="登記信息"
+        />
+
 </RelativeLayout>

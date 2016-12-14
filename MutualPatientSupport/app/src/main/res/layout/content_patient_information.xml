@@ -13,4 +13,147 @@
     tools:context="hkust.mutualpatientsupport.patient_informationActivity"
     tools:showIn="@layout/activity_patient_information">
 
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/icon"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/old_pic" />
+
+
+    <TextView
+        android:text="名字："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:id="@+id/名字"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:layout_below="@+id/old_pic"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="25dp" />
+
+    <TextView
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:id="@+id/羅大衛"
+        android:scrollbarSize="108dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="羅大衛"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:layout_alignBaseline="@+id/名字"
+        android:layout_alignBottom="@+id/名字"
+        android:layout_toEndOf="@+id/名字"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="性別："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:id="@+id/性別"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:layout_below="@+id/名字"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="25dp" />
+
+    <TextView
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:id="@+id/男"
+        android:scrollbarSize="108dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="男"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:layout_alignBaseline="@+id/性別"
+        android:layout_alignBottom="@+id/性別"
+        android:layout_toEndOf="@+id/性別"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="聯絡電話："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:id="@+id/聯絡電話"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:layout_below="@+id/性別"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="25dp" />
+
+    <TextView
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:id="@+id/tv_phone"
+        android:scrollbarSize="108dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="52263901"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:layout_alignBaseline="@+id/聯絡電話"
+        android:layout_alignBottom="@+id/聯絡電話"
+        android:layout_toEndOf="@+id/聯絡電話"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="家庭住址："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:id="@+id/家庭住址"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:layout_below="@+id/聯絡電話"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="25dp" />
+
+    <TextView
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:id="@+id/香港西貢區"
+        android:scrollbarSize="108dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="香港西貢區將軍澳"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:layout_alignBaseline="@+id/家庭住址"
+        android:layout_alignBottom="@+id/家庭住址"
+        android:layout_toEndOf="@+id/家庭住址"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="病人等級："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:id="@+id/病人等級"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:layout_below="@+id/家庭住址"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="25dp" />
+
+    <TextView
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:id="@+id/B級別"
+        android:scrollbarSize="108dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="B級別"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:layout_alignBaseline="@+id/病人等級"
+        android:layout_alignBottom="@+id/病人等級"
+        android:layout_toEndOf="@+id/病人等級"
+        android:layout_alignParentEnd="true" />
 </RelativeLayout>

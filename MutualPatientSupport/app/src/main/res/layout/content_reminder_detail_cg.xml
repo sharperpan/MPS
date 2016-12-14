@@ -13,4 +13,192 @@
     tools:context="hkust.mutualpatientsupport.reminder_detail_cgActivity"
     tools:showIn="@layout/activity_reminder_detail_cg">
 
+    <TextView
+        android:text="事件："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:id="@+id/事件"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="25dp" />
+
+    <TextView
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:id="@+id/吃藥"
+        android:scrollbarSize="108dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="吃藥"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:layout_alignBaseline="@+id/事件"
+        android:layout_alignBottom="@+id/事件"
+        android:layout_toEndOf="@+id/事件"
+        android:layout_alignParentEnd="true" />
+
+
+    <TextView
+        android:text="描述："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:id="@+id/描述"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/事件"
+        android:layout_alignStart="@+id/事件時間" />
+
+    <TextView
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:id="@+id/詳情"
+        android:scrollbarSize="108dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A藥丸吃2個   B藥丸吃1個"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:layout_alignBaseline="@+id/描述"
+        android:layout_alignBottom="@+id/描述"
+        android:layout_toEndOf="@+id/描述" />
+
+
+    <TextView
+        android:text="事件時間："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:id="@+id/事件時間"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:layout_marginTop="23dp"
+        android:layout_below="@+id/描述"
+        android:layout_alignStart="@+id/事件" />
+
+    <TextView
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:id="@+id/日期1"
+        android:scrollbarSize="108dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2016-11-11  下午6：00"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:layout_alignBaseline="@+id/事件時間"
+        android:layout_alignBottom="@+id/事件時間"
+        android:layout_toEndOf="@+id/事件時間"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="提醒時間："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:id="@+id/提醒時間"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/事件時間"
+        android:layout_alignStart="@+id/地點" />
+
+    <TextView
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:id="@+id/日期2"
+        android:scrollbarSize="108dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2016-11-11  下午5：50"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:layout_alignBaseline="@+id/提醒時間"
+        android:layout_alignBottom="@+id/提醒時間"
+        android:layout_toEndOf="@+id/提醒時間"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="地點："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:id="@+id/地點"
+        android:layout_below="@+id/提醒時間"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="25dp" />
+
+    <TextView
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:id="@+id/家裡"
+        android:scrollbarSize="108dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="家裡"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:layout_alignBaseline="@+id/地點"
+        android:layout_alignBottom="@+id/地點"
+        android:layout_toEndOf="@+id/地點"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="狀態："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:id="@+id/狀態"
+        android:layout_below="@+id/地點"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="25dp" />
+
+    <TextView
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:id="@+id/還未完成"
+        android:scrollbarSize="108dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="還未完成"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:layout_alignBaseline="@+id/狀態"
+        android:layout_alignBottom="@+id/狀態"
+        android:layout_toEndOf="@+id/狀態"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="編輯"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button1"
+        android:textSize="24sp"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:elevation="9dp"
+        android:layout_below="@+id/狀態"
+        android:layout_alignStart="@+id/狀態"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="48dp" />
+
+    <Button
+        android:text="提醒老人"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
+        android:textSize="24sp"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:elevation="9dp"
+        android:layout_marginEnd="21dp"
+        android:layout_alignBaseline="@+id/button1"
+        android:layout_alignBottom="@+id/button1"
+        android:layout_alignEnd="@+id/詳情" />
+
 </RelativeLayout>

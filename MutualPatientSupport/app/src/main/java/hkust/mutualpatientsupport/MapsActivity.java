@@ -114,10 +114,12 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         // get location of the home
         LatLng home_pos = new LatLng(22.33, 114.26);
+        LatLng care_pos = new LatLng(22.31, 114.2658);
 
-        mMap.addMarker(new MarkerOptions().position(home_pos).title("My Home"));
+        mMap.addMarker(new MarkerOptions().position(care_pos).title("護理人員")).showInfoWindow();
+        mMap.addMarker(new MarkerOptions().position(home_pos).title("家")).showInfoWindow();
         mMap.moveCamera(CameraUpdateFactory.newLatLng(home_pos));
-        mMap.animateCamera(CameraUpdateFactory.zoomTo(12));
+        mMap.animateCamera(CameraUpdateFactory.zoomTo(13));
         mMap.setMinZoomPreference(6.0f);
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
                 == PackageManager.PERMISSION_GRANTED) {
