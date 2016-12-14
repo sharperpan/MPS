@@ -14,7 +14,7 @@ public class news_detailActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_news_detail);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar_news_detail);
         setSupportActionBar(toolbar);
 
         WebView webview = (WebView) findViewById(R.id.webview);
@@ -27,7 +27,6 @@ public class news_detailActivity extends AppCompatActivity {
                 return true;
             }
         });
-;
     }
 
 

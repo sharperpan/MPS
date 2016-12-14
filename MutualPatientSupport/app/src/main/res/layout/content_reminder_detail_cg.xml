@@ -173,7 +173,7 @@
         android:text="編輯"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/button1"
+        android:id="@+id/button_reminder_detail_cg_edit"
         android:textSize="24sp"
         android:textColor="@color/common_google_signin_btn_text_dark_focused"
         android:elevation="9dp"
@@ -186,12 +186,12 @@
         android:text="提醒老人"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/button2"
+        android:id="@+id/button_reminder_detail_cg_remid"
         android:textSize="24sp"
         android:textColor="@color/common_google_signin_btn_text_dark_focused"
         android:elevation="9dp"
-        android:layout_alignBaseline="@+id/button1"
-        android:layout_alignBottom="@+id/button1"
+        android:layout_alignBaseline="@+id/button_reminder_detail_cg_edit"
+        android:layout_alignBottom="@+id/button_reminder_detail_cg_edit"
         android:layout_alignEnd="@+id/et_reminder_detail_cg_status" />
 
 </RelativeLayout>
