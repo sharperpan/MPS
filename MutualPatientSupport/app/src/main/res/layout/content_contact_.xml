@@ -103,5 +103,5 @@
         android:textSize="26dp"
         android:background="@drawable/shape"
         android:text="呼叫醫院"
-        android:layout_alignTop="@+id/cardview_Callcaregiver" />
+        android:layout_alignTop="@+id/button_cardview_Callcaregiver" />
 </RelativeLayout>
