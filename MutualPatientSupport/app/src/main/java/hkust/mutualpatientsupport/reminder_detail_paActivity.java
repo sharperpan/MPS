@@ -13,7 +13,7 @@ public class reminder_detail_paActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reminder_detail_pa);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar_reminder_detail_pa);
         setSupportActionBar(toolbar);
 
     }

@@ -31,7 +31,7 @@ public class NameCardActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_name_card);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar_name_card);
         setSupportActionBar(toolbar);
         System.out.println("come in");
         final TextView PatientName = (TextView) findViewById(R.id.cardview_txtName);

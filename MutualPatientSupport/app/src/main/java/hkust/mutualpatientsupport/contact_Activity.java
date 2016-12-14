@@ -28,7 +28,7 @@ public class contact_Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contact_);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar_contact);
         setSupportActionBar(toolbar);
 
         final TextView PatientName = (TextView) findViewById(R.id.cardview_txtName_contact);
@@ -78,7 +78,7 @@ public class contact_Activity extends AppCompatActivity {
         });
 
 
-        ((Button) findViewById(R.id.button_cardview_Callcaregiver)).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.button_cardview_Callcaregiver).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String phoneNumber = "852-52249407";
@@ -89,7 +89,7 @@ public class contact_Activity extends AppCompatActivity {
             }
         });
 
-        ((Button) findViewById(R.id.button_cardview_CallHospital)).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.button_cardview_CallHospital).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String phoneNumber = "852-68196690";

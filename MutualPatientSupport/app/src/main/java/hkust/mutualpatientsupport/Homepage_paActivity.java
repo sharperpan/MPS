@@ -15,7 +15,7 @@ public class Homepage_paActivity extends AppCompatActivity {
         setContentView(R.layout.activity_homepage_pa);
 
 
-        ((Button) findViewById(R.id.button_name_card)).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.button_name_card).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();
@@ -24,7 +24,7 @@ public class Homepage_paActivity extends AppCompatActivity {
             }
         });
 
-        ((Button) findViewById(R.id.button_contact)).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.button_contact).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();
@@ -32,7 +32,7 @@ public class Homepage_paActivity extends AppCompatActivity {
                 Homepage_paActivity.this.startActivity(intent);
             }
         });
-        ((Button) findViewById(R.id.button_news)).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.button_news).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();
@@ -40,7 +40,7 @@ public class Homepage_paActivity extends AppCompatActivity {
                 Homepage_paActivity.this.startActivity(intent);
             }
         });
-        ((Button) findViewById(R.id.button_location)).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.button_location).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();
@@ -48,7 +48,7 @@ public class Homepage_paActivity extends AppCompatActivity {
                 Homepage_paActivity.this.startActivity(intent);
             }
         });
-        ((Button) findViewById(R.id.button_gohome)).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.button_gohome).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();
@@ -56,7 +56,7 @@ public class Homepage_paActivity extends AppCompatActivity {
                 Homepage_paActivity.this.startActivity(intent);
             }
         });
-        ((Button) findViewById(R.id.button_reminder)).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.button_reminder).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();
