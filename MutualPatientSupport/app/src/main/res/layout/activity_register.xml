@@ -9,7 +9,7 @@
 
 
     <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar"
+        android:id="@+id/toolbar_register"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:background="?attr/colorButtonNormal"
@@ -21,14 +21,10 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/toolbar"
         android:layout_alignParentStart="true"
-<<<<<<< HEAD
-        android:layout_below="@+id/toolbar_register">
-=======
+        android:layout_below="@+id/toolbar_register"
         android:layout_marginStart="32dp"
         android:layout_marginTop="18dp">
->>>>>>> origin/master
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -504,44 +500,9 @@
                 android:layout_alignBottom="@+id/tv_register_caregiver_add2"
                 android:layout_toEndOf="@+id/tv_register_caregiver_add2"
                 android:textColor="?attr/actionMenuTextColor"/>
-<<<<<<< HEAD
-                        <Button
-                            android:text="提交"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/button_register_submit"
-                            android:layout_below="@+id/tv_register_caregiver_add2"
-                            android:layout_centerHorizontal="true"
-                            android:textSize="24sp"
-                            android:textColor="@color/common_google_signin_btn_text_dark_focused"
-                            android:elevation="9dp" />
 
 
-                    </RelativeLayout>
 
-                </ScrollView>
-
-
-                <android.support.v7.widget.Toolbar
-                    android:id="@+id/toolbar_register"
-                    android:layout_width="match_parent"
-                    android:layout_height="?attr/actionBarSize"
-                    android:background="?attr/colorPrimary"
-                    app:popupTheme="@style/AppTheme.PopupOverlay" >
-                    <!--
-                                        <Button
-                                            android:text="<返回"
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:id="@+id/button_register_back"
-                                            android:layout_weight="1"
-                                            android:textColor="@color/cardview_light_background"
-                                            android:background="?attr/colorPrimary"
-                                            android:textSize="24sp" />
-                  -->
-                                    </android.support.v7.widget.Toolbar>
-                                </RelativeLayout>
-=======
 
             <Button
                 android:text="提交"
@@ -559,23 +520,7 @@
 
     </ScrollView>
 
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorPrimary"
-        app:popupTheme="@style/AppTheme.PopupOverlay" >
 
-        <Button
-            android:text="<返回"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/button3"
-            android:layout_weight="1"
-            android:textColor="@color/cardview_light_background"
-            android:background="?attr/colorPrimary"
-            android:textSize="24sp" />
 
-    </android.support.v7.widget.Toolbar>
+
 </RelativeLayout>
->>>>>>> origin/master
