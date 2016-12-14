@@ -13,4 +13,179 @@
     tools:context="hkust.mutualpatientsupport.reminder_detail_paActivity"
     tools:showIn="@layout/activity_reminder_detail_pa">
 
+
+    <TextView
+        android:text="事件："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:id="@+id/tv_register_patient_event"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="25dp" />
+
+    <TextView
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:id="@+id/tv_register_patient_eatevent"
+        android:scrollbarSize="108dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="吃藥"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:layout_alignBaseline="@+id/tv_register_patient_event"
+        android:layout_alignBottom="@+id/tv_register_patient_event"
+        android:layout_toEndOf="@+id/tv_register_patient_event"
+        android:layout_alignParentEnd="true" />
+
+
+    <TextView
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:id="@+id/tv_register_patient_details"
+        android:scrollbarSize="108dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A藥丸吃2個   B藥丸吃1個"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:layout_alignBaseline="@+id/tv_register_patient_description"
+        android:layout_alignBottom="@+id/tv_register_patient_description"
+        android:layout_toEndOf="@+id/tv_register_patient_description" />
+
+
+    <TextView
+        android:text="事件時間："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:id="@+id/tv_register_patient_eventtime"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:layout_marginTop="23dp"
+        android:layout_below="@+id/tv_register_patient_description"
+        android:layout_alignStart="@+id/tv_register_patient_event" />
+
+    <TextView
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:id="@+id/tv_register_patient_event_time"
+        android:scrollbarSize="108dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2016-11-11  下午6：00"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:layout_alignBaseline="@+id/tv_register_patient_eventtime"
+        android:layout_alignBottom="@+id/tv_register_patient_eventtime"
+        android:layout_toEndOf="@+id/tv_register_patient_eventtime"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:id="@+id/tv_register_patient_remind_time"
+        android:scrollbarSize="108dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2016-11-11  下午5：50"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:layout_alignBaseline="@+id/tv_register_patient_remindtime"
+        android:layout_alignBottom="@+id/tv_register_patient_remindtime"
+        android:layout_toEndOf="@+id/tv_register_patient_remindtime"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="地點："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:id="@+id/tv_register_patient_location"
+        android:layout_below="@+id/tv_register_patient_remindtime"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="25dp" />
+
+    <TextView
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:id="@+id/tv_register_patient_location_home"
+        android:scrollbarSize="108dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="家裡"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:layout_alignBaseline="@+id/tv_register_patient_location"
+        android:layout_alignBottom="@+id/tv_register_patient_location"
+        android:layout_toEndOf="@+id/tv_register_patient_location"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="狀態："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:id="@+id/tv_register_patient_status"
+        android:layout_below="@+id/tv_register_patient_location"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="25dp" />
+
+    <TextView
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:id="@+id/tv_register_patient_undone"
+        android:scrollbarSize="108dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="還未完成"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:layout_alignBaseline="@+id/tv_register_patient_status"
+        android:layout_alignBottom="@+id/tv_register_patient_status"
+        android:layout_toEndOf="@+id/tv_register_patient_status"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="描述："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:id="@+id/tv_register_patient_description"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/tv_register_patient_event"
+        android:layout_alignStart="@+id/tv_register_patient_eventtime" />
+
+    <TextView
+        android:text="提醒時間："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:id="@+id/tv_register_patient_remindtime"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/tv_register_patient_eventtime"
+        android:layout_alignStart="@+id/tv_register_patient_eventtime" />
+
+    <Button
+        android:text="完成"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:textSize="24sp"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:elevation="9dp"
+        android:layout_below="@+id/tv_register_patient_undone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp" />
+
 </RelativeLayout>
