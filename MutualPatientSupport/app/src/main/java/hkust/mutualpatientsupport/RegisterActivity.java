@@ -40,15 +40,14 @@ public class RegisterActivity extends AppCompatActivity {
         });
     }
     void upload(){
-        String FirstName = (EditText) findViewById(R.id).getText().toString();
-        String Gender = (EditText) findViewById(R.id).getText().toString();
-        String LastName = (EditText) findViewById(R.id).getText().toString();
-        String Phone = (EditText) findViewById(R.id).getText().toString();
-        String CID = (EditText) findViewById(R.id).getText().toString();
-        String Email = (EditText) findViewById(R.id).getText().toString();
-        String Password = (EditText) findViewById(R.id).getText().toString();
-        String BuildingAddress = (EditText) findViewById(R.id).getText().toString();
-        String StreetAddress = (EditText) findViewById(R.id).getText().toString();
+        String FirstName = ((EditText)findViewById(R.id.et_register_caregiver_firstname)).getText().toString();
+        String Gender = ((EditText) findViewById(R.id.et_register_caregiver_gender)).getText().toString();
+        String LastName = ((EditText) findViewById(R.id.et_register_caregiver_lastname)).getText().toString();
+        String Phone = ((EditText) findViewById(R.id.et_register_caregiver_phone)).getText().toString();
+        String Email = ((EditText) findViewById(R.id.et_register_caregiver_email)).getText().toString();
+        String Password = ((EditText) findViewById(R.id.et_register_caregiver_password)).getText().toString();
+        String BuildingAddress = ((EditText) findViewById(R.id.et_register_caregiver_add1)).getText().toString();
+        String StreetAddress = ((EditText) findViewById(R.id.et_register_caregiver_add2)).getText().toString();
         RequestParams params = new RequestParams();
         try {
             JSONObject jsonParams = new JSONObject();
