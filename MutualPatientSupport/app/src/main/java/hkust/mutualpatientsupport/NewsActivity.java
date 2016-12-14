@@ -26,10 +26,7 @@ public class NewsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_news);
         ViewFlipper flipper = (ViewFlipper) findViewById(R.id.viewFlipper);
         flipper.startFlipping();
-        news_url.add("https://kknews.cc/zh-hk/health/235apz.html");
-        news_url.add("http://www.doheal.com/article/5151.html");
-        news_url.add("http://www.baidu.com");
-        news_url.add("http://www.google.com");
+        news_url = geturl();
         new1 =(ImageButton) findViewById(R.id.imageButton_new1);
         new1.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v)
@@ -51,7 +48,7 @@ public class NewsActivity extends AppCompatActivity {
             }
         });
         news_list = (ListView) findViewById(R.id.news_list);
-        news_list.setAdapter(new ArrayAdapter<>(this, android.R.layout.simple_expandable_list_item_1,getData()));
+        news_list.setAdapter(new ArrayAdapter<>(this, android.R.layout.simple_expandable_list_item_1,gettitle()));
         news_list.setOnItemClickListener(new AdapterView.OnItemClickListener(){
             public void onItemClick(AdapterView<?> parent, View view,int position, long id) {
                 String url = news_url.get(position);
@@ -63,14 +60,27 @@ public class NewsActivity extends AppCompatActivity {
         });
     }
 
-    private List<String> getData(){
-
+    private List<String> gettitle(){
         List<String> data = new ArrayList<>();
         data.add("老年人應該多運動");
         data.add("六款養生茶");
         data.add("百度");
         data.add("谷歌");
-
+        data.add("六款養生茶");
+        data.add("百度");
+        data.add("谷歌");
+        data.add("六款養生茶");
+        data.add("百度");
+        data.add("谷歌");
         return data;
+    }
+
+    private List<String> geturl(){
+    List<String> news_url = new ArrayList<>();
+    news_url.add("https://kknews.cc/zh-hk/health/235apz.html");
+    news_url.add("http://www.doheal.com/article/5151.html");
+    news_url.add("http://www.baidu.com");
+    news_url.add("http://www.google.com");
+    return news_url;
     }
 }
