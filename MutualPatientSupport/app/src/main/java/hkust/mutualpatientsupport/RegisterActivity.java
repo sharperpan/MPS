@@ -116,18 +116,20 @@ public class RegisterActivity extends AppCompatActivity {
         builder.setMessage(message);
 
         //监听下方button点击事件
-        builder.setPositiveButton("確定", new DialogInterface.OnClickListener() {
+        builder.setPositiveButton("前往登陆", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
-                et_pw.setText("123");
+                Intent intent = new Intent();
+                intent.setClass(RegisterActivity.this, LoginActivity.class);
+                RegisterActivity.this.startActivity(intent);
             }
         });
-        builder.setNegativeButton("忘記密碼", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialogInterface, int i) {
-                Toast.makeText(getApplicationContext(), "", Toast.LENGTH_SHORT).show();
-            }
-        });
+        //builder.setNegativeButton("忘記密碼", new DialogInterface.OnClickListener() {
+        //    @Override
+        //    public void onClick(DialogInterface dialogInterface, int i) {
+        //        Toast.makeText(getApplicationContext(), "", Toast.LENGTH_SHORT).show();
+        //    }
+        //});
 
         //设置对话框是可取消的
         builder.setCancelable(true);
