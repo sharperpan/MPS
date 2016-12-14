@@ -4,10 +4,6 @@
     android:id="@+id/activity_homepage_pa"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="hkust.mutualpatientsupport.Homepage_paActivity">
 
     <Button
@@ -52,18 +48,6 @@
         android:layout_alignStart="@+id/button_reminder" />
 
     <Button
-        android:text="新聞\n活動"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/button_news"
-        android:background="@android:color/holo_orange_dark"
-        android:padding="40dp"
-        android:textSize="24sp"
-        android:layout_marginTop="19dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/button_location" />
-
-    <Button
         android:text="提醒\n事項"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -103,4 +87,16 @@
         android:layout_below="@+id/button_gohome"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp" />
+
+    <Button
+        android:text="新聞\n活動"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_news"
+        android:background="@android:color/holo_orange_dark"
+        android:padding="40dp"
+        android:textSize="24sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/button_location"
+        android:layout_marginTop="18dp" />
 </RelativeLayout>
