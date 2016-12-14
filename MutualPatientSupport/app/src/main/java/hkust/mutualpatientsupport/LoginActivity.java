@@ -77,7 +77,7 @@ public class LoginActivity extends AppCompatActivity {
             // need to check id and pw
             String id = et_account.getText().toString();
             String pw = et_pw.getText().toString();
-            RequestParams params = new RequestParams();
+            //RequestParams params = new RequestParams();
             try {
                 JSONObject jsonParams = new JSONObject();
                 jsonParams.put("Email", id); //Pick username from user control
