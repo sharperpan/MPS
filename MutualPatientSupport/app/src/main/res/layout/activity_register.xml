@@ -23,7 +23,7 @@
                 android:text="長者信息"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/tv_1"
+                android:id="@+id/tv_register_patient_inf"
                 android:textSize="28sp"
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
@@ -34,7 +34,7 @@
                 android:layout_height="wrap_content"
                 app:srcCompat="@drawable/icon"
                 android:layout_centerHorizontal="true"
-                android:layout_below="@+id/tv_1"
+                android:layout_below="@+id/tv_register_patient_inf"
                 android:id="@+id/old_pic" />
 
             <TextView
@@ -42,7 +42,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
-                android:id="@+id/tv_2"
+                android:id="@+id/tv_register_patient_firstname"
                 android:layout_below="@+id/old_pic"
                 android:layout_alignParentStart="true"
                 android:textColor="@color/common_google_signin_btn_text_dark_focused" />
@@ -50,15 +50,15 @@
             <EditText
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:id="@+id/tv_3"
+                android:id="@+id/et_register_patient_firstname"
                 android:scrollbarSize="108dp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
                 android:textSize="18sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignBaseline="@+id/tv_2"
-                android:layout_alignBottom="@+id/tv_2"
-                android:layout_toEndOf="@+id/tv_2"
+                android:layout_alignBaseline="@+id/tv_register_patient_firstname"
+                android:layout_alignBottom="@+id/tv_register_patient_firstname"
+                android:layout_toEndOf="@+id/tv_register_patient_firstname"
                 android:textColor="?attr/actionMenuTextColor"
                 android:hint="first name" />
 
@@ -67,8 +67,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
-                android:id="@+id/tv_4"
-                android:layout_below="@+id/tv_2"
+                android:id="@+id/tv_register_patient_lastname"
+                android:layout_below="@+id/tv_register_patient_firstname"
                 android:layout_alignParentStart="true"
                 android:layout_marginTop="11dp"
                 android:textColor="@color/common_google_signin_btn_text_dark_focused" />
@@ -77,15 +77,15 @@
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:hint="last name"
-                android:id="@+id/tv_5"
+                android:id="@+id/et_register_patient_lastname"
                 android:scrollbarSize="108dp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
                 android:textSize="18sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignBaseline="@+id/tv_4"
-                android:layout_alignBottom="@+id/tv_4"
-                android:layout_toEndOf="@+id/tv_4"
+                android:layout_alignBaseline="@+id/tv_register_patient_lastname"
+                android:layout_alignBottom="@+id/tv_register_patient_lastname"
+                android:layout_toEndOf="@+id/tv_register_patient_lastname"
                 android:textColor="?attr/actionMenuTextColor" />
 
             <TextView
@@ -93,8 +93,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
-                android:id="@+id/tv_6"
-                android:layout_below="@+id/tv_4"
+                android:id="@+id/tv_register_patient_birth"
+                android:layout_below="@+id/tv_register_patient_lastname"
                 android:layout_alignParentStart="true"
                 android:layout_marginTop="11dp"
                 android:textColor="@color/common_google_signin_btn_text_dark_focused" />
@@ -103,15 +103,15 @@
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:hint="Date of birth"
-                android:id="@+id/tv_7"
+                android:id="@+id/et_register_patient_birth"
                 android:scrollbarSize="108dp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
                 android:textSize="18sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignBaseline="@+id/tv_6"
-                android:layout_alignBottom="@+id/tv_6"
-                android:layout_toEndOf="@+id/tv_6"
+                android:layout_alignBaseline="@+id/tv_register_patient_birth"
+                android:layout_alignBottom="@+id/tv_register_patient_birth"
+                android:layout_toEndOf="@+id/tv_register_patient_birth"
                 android:textColor="?attr/actionMenuTextColor" />
 
             <TextView
@@ -119,8 +119,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
-                android:id="@+id/tv_8"
-                android:layout_below="@+id/tv_6"
+                android:id="@+id/tv_register_patient_gender"
+                android:layout_below="@+id/tv_register_patient_birth"
                 android:layout_alignParentStart="true"
                 android:layout_marginTop="11dp"
                 android:textColor="@color/common_google_signin_btn_text_dark_focused" />
@@ -129,15 +129,15 @@
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:hint="man or woman"
-                android:id="@+id/tv_9"
+                android:id="@+id/et_register_patient_gender"
                 android:scrollbarSize="108dp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
                 android:textSize="18sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignBaseline="@+id/tv_8"
-                android:layout_alignBottom="@+id/tv_8"
-                android:layout_toEndOf="@+id/tv_8"
+                android:layout_alignBaseline="@+id/tv_register_patient_gender"
+                android:layout_alignBottom="@+id/tv_register_patient_gender"
+                android:layout_toEndOf="@+id/tv_register_patient_gender"
                 android:textColor="?attr/actionMenuTextColor" />
 
             <TextView
@@ -145,8 +145,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
-                android:id="@+id/tv_10"
-                android:layout_below="@+id/tv_8"
+                android:id="@+id/tv_register_patient_add1"
+                android:layout_below="@+id/tv_register_patient_gender"
                 android:layout_alignParentStart="true"
                 android:layout_marginTop="11dp"
                 android:textColor="@color/common_google_signin_btn_text_dark_focused" />
@@ -155,15 +155,15 @@
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:hint="address"
-                android:id="@+id/tv_11"
+                android:id="@+id/et_register_patient_add1"
                 android:scrollbarSize="108dp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
                 android:textSize="18sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignBaseline="@+id/tv_10"
-                android:layout_alignBottom="@+id/tv_10"
-                android:layout_toEndOf="@+id/tv_10"
+                android:layout_alignBaseline="@+id/tv_register_patient_add1"
+                android:layout_alignBottom="@+id/tv_register_patient_add1"
+                android:layout_toEndOf="@+id/tv_register_patient_add1"
                 android:textColor="?attr/actionMenuTextColor" />
 
             <TextView
@@ -171,8 +171,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
-                android:id="@+id/tv_12"
-                android:layout_below="@+id/tv_10"
+                android:id="@+id/tv_register_patient_add2"
+                android:layout_below="@+id/tv_register_patient_add1"
                 android:layout_alignParentStart="true"
                 android:layout_marginTop="11dp"
                 android:textColor="@color/common_google_signin_btn_text_dark_focused" />
@@ -181,15 +181,15 @@
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:hint="address"
-                android:id="@+id/tv_13"
+                android:id="@+id/et_register_patient_add2"
                 android:scrollbarSize="108dp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
                 android:textSize="18sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignBaseline="@+id/tv_12"
-                android:layout_alignBottom="@+id/tv_12"
-                android:layout_toEndOf="@+id/tv_12"
+                android:layout_alignBaseline="@+id/tv_register_patient_add2"
+                android:layout_alignBottom="@+id/tv_register_patient_add2"
+                android:layout_toEndOf="@+id/tv_register_patient_add2"
                 android:textColor="?attr/actionMenuTextColor" />
 
             <TextView
@@ -197,8 +197,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
-                android:id="@+id/tv_14"
-                android:layout_below="@+id/tv_12"
+                android:id="@+id/tv_register_patient_phone"
+                android:layout_below="@+id/tv_register_patient_add2"
                 android:layout_alignParentStart="true"
                 android:layout_marginTop="11dp"
                 android:textColor="@color/common_google_signin_btn_text_dark_focused" />
@@ -207,15 +207,15 @@
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:hint="phone"
-                android:id="@+id/tv_15"
+                android:id="@+id/et_register_patient_phone"
                 android:scrollbarSize="108dp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
                 android:textSize="18sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignBaseline="@+id/tv_14"
-                android:layout_alignBottom="@+id/tv_14"
-                android:layout_toEndOf="@+id/tv_14"
+                android:layout_alignBaseline="@+id/tv_register_patient_phone"
+                android:layout_alignBottom="@+id/tv_register_patient_phone"
+                android:layout_toEndOf="@+id/tv_register_patient_phone"
                 android:textColor="?attr/actionMenuTextColor" />
 
             <TextView
@@ -223,8 +223,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
-                android:id="@+id/tv_16"
-                android:layout_below="@+id/tv_14"
+                android:id="@+id/tv_register_patient_level"
+                android:layout_below="@+id/tv_register_patient_phone"
                 android:layout_alignParentStart="true"
                 android:layout_marginTop="11dp"
                 android:textColor="@color/common_google_signin_btn_text_dark_focused" />
@@ -233,15 +233,15 @@
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:hint="level"
-                android:id="@+id/tv_17"
+                android:id="@+id/et_register_patient_level"
                 android:scrollbarSize="108dp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
                 android:textSize="18sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignBaseline="@+id/tv_16"
-                android:layout_alignBottom="@+id/tv_16"
-                android:layout_toEndOf="@+id/tv_16"
+                android:layout_alignBaseline="@+id/tv_register_patient_level"
+                android:layout_alignBottom="@+id/tv_register_patient_level"
+                android:layout_toEndOf="@+id/tv_register_patient_level"
                 android:textColor="?attr/actionMenuTextColor" />
 
             <TextView
@@ -249,10 +249,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="28sp"
-                android:id="@+id/tv_18"
+                android:id="@+id/tv_register_caregiver_inf"
                 android:layout_marginTop="12dp"
                 android:textColor="@color/common_google_signin_btn_text_dark_focused"
-                android:layout_below="@+id/tv_17"
+                android:layout_below="@+id/et_register_patient_level"
                 android:layout_centerHorizontal="true" />
 
             <TextView
@@ -260,24 +260,24 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
-                android:id="@+id/tv_19"
+                android:id="@+id/tv_register_caregiver_firstname"
                 android:textColor="@color/common_google_signin_btn_text_dark_focused"
-                android:layout_below="@+id/tv_18"
+                android:layout_below="@+id/tv_register_caregiver_inf"
                 android:layout_alignParentStart="true" />
 
             <EditText
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:hint="first name"
-                android:id="@+id/tv_20"
+                android:id="@+id/et_register_caregiver_firstname"
                 android:scrollbarSize="108dp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
                 android:textSize="18sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignBaseline="@+id/tv_19"
-                android:layout_alignBottom="@+id/tv_19"
-                android:layout_toEndOf="@+id/tv_19"
+                android:layout_alignBaseline="@+id/tv_register_caregiver_firstname"
+                android:layout_alignBottom="@+id/tv_register_caregiver_firstname"
+                android:layout_toEndOf="@+id/tv_register_caregiver_firstname"
                 android:textColor="?attr/actionMenuTextColor" />
 
             <TextView
@@ -285,8 +285,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
-                android:id="@+id/tv_21"
-                android:layout_below="@+id/tv_19"
+                android:id="@+id/tv_register_caregiver_lastname"
+                android:layout_below="@+id/tv_register_caregiver_firstname"
                 android:layout_alignParentStart="true"
                 android:layout_marginTop="11dp"
                 android:textColor="@color/common_google_signin_btn_text_dark_focused" />
@@ -295,15 +295,15 @@
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:hint="last name"
-                android:id="@+id/tv_22"
+                android:id="@+id/et_register_caregiver_lastname"
                 android:scrollbarSize="108dp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
                 android:textSize="18sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignBaseline="@+id/tv_21"
-                android:layout_alignBottom="@+id/tv_21"
-                android:layout_toEndOf="@+id/tv_21"
+                android:layout_alignBaseline="@+id/tv_register_caregiver_lastname"
+                android:layout_alignBottom="@+id/tv_register_caregiver_lastname"
+                android:layout_toEndOf="@+id/tv_register_caregiver_lastname"
                 android:textColor="?attr/actionMenuTextColor" />
 
             <TextView
@@ -311,8 +311,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
-                android:id="@+id/tv_23"
-                android:layout_below="@+id/tv_21"
+                android:id="@+id/tv_register_caregiver_gender"
+                android:layout_below="@+id/tv_register_caregiver_lastname"
                 android:layout_alignParentStart="true"
                 android:layout_marginTop="11dp"
                 android:textColor="@color/common_google_signin_btn_text_dark_focused" />
@@ -321,15 +321,15 @@
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:hint="man or woman"
-                android:id="@+id/tv_24"
+                android:id="@+id/et_register_caregiver_gender"
                 android:scrollbarSize="108dp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
                 android:textSize="18sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignBaseline="@+id/tv_23"
-                android:layout_alignBottom="@+id/tv_23"
-                android:layout_toEndOf="@+id/tv_23"
+                android:layout_alignBaseline="@+id/tv_register_caregiver_gender"
+                android:layout_alignBottom="@+id/tv_register_caregiver_gender"
+                android:layout_toEndOf="@+id/tv_register_caregiver_gender"
                 android:textColor="?attr/actionMenuTextColor" />
 
             <TextView
@@ -337,8 +337,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
-                android:id="@+id/tv_25"
-                android:layout_below="@+id/tv_23"
+                android:id="@+id/tv_register_caregiver_email"
+                android:layout_below="@+id/tv_register_caregiver_gender"
                 android:layout_alignParentStart="true"
                 android:layout_marginTop="11dp"
                 android:textColor="@color/common_google_signin_btn_text_dark_focused" />
@@ -347,15 +347,15 @@
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:hint="email"
-                android:id="@+id/tv_26"
+                android:id="@+id/et_register_caregiver_email"
                 android:scrollbarSize="108dp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
                 android:textSize="18sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignBaseline="@+id/tv_25"
-                android:layout_alignBottom="@+id/tv_25"
-                android:layout_toEndOf="@+id/tv_25"
+                android:layout_alignBaseline="@+id/tv_register_caregiver_email"
+                android:layout_alignBottom="@+id/tv_register_caregiver_email"
+                android:layout_toEndOf="@+id/tv_register_caregiver_email"
                 android:textColor="?attr/actionMenuTextColor" />
 
             <TextView
@@ -363,8 +363,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
-                android:id="@+id/tv_27"
-                android:layout_below="@+id/tv_25"
+                android:id="@+id/tv_register_caregiver_phone"
+                android:layout_below="@+id/tv_register_caregiver_email"
                 android:layout_alignParentStart="true"
                 android:layout_marginTop="11dp"
                 android:textColor="@color/common_google_signin_btn_text_dark_focused" />
@@ -373,15 +373,15 @@
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:hint="phone"
-                android:id="@+id/tv_28"
+                android:id="@+id/et_register_caregiver_phone"
                 android:scrollbarSize="108dp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
                 android:textSize="18sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignBaseline="@+id/tv_27"
-                android:layout_alignBottom="@+id/tv_27"
-                android:layout_toEndOf="@+id/tv_27"
+                android:layout_alignBaseline="@+id/tv_register_caregiver_phone"
+                android:layout_alignBottom="@+id/tv_register_caregiver_phone"
+                android:layout_toEndOf="@+id/tv_register_caregiver_phone"
                 android:textColor="?attr/actionMenuTextColor" />
 
             <TextView
@@ -389,8 +389,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
-                android:id="@+id/tv_29"
-                android:layout_below="@+id/tv_27"
+                android:id="@+id/tv_register_caregiver_password"
+                android:layout_below="@+id/tv_register_caregiver_phone"
                 android:layout_alignParentStart="true"
                 android:layout_marginTop="11dp"
                 android:textColor="@color/common_google_signin_btn_text_dark_focused" />
@@ -399,15 +399,15 @@
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:hint="password"
-                android:id="@+id/tv_30"
+                android:id="@+id/et_register_caregiver_password"
                 android:scrollbarSize="108dp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
                 android:textSize="18sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignBaseline="@+id/tv_29"
-                android:layout_alignBottom="@+id/tv_29"
-                android:layout_toEndOf="@+id/tv_29"
+                android:layout_alignBaseline="@+id/tv_register_caregiver_password"
+                android:layout_alignBottom="@+id/tv_register_caregiver_password"
+                android:layout_toEndOf="@+id/tv_register_caregiver_password"
                 android:textColor="?attr/actionMenuTextColor" />
 
             <TextView
@@ -415,8 +415,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
-                android:id="@+id/tv_31"
-                android:layout_below="@+id/tv_29"
+                android:id="@+id/tv_register_caregiver_confirmpassword"
+                android:layout_below="@+id/tv_register_caregiver_password"
                 android:layout_alignParentStart="true"
                 android:layout_marginTop="11dp"
                 android:textColor="@color/common_google_signin_btn_text_dark_focused"  />
@@ -425,15 +425,15 @@
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:hint="password"
-                android:id="@+id/tv_32"
+                android:id="@+id/et_register_caregiver_confirmpassword"
                 android:scrollbarSize="108dp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
                 android:textSize="18sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignBaseline="@+id/tv_31"
-                android:layout_alignBottom="@+id/tv_31"
-                android:layout_toEndOf="@+id/tv_31"
+                android:layout_alignBaseline="@+id/tv_register_caregiver_confirmpassword"
+                android:layout_alignBottom="@+id/tv_register_caregiver_confirmpassword"
+                android:layout_toEndOf="@+id/tv_register_caregiver_confirmpassword"
                 android:textColor="?attr/actionMenuTextColor" />
 
             <TextView
@@ -441,8 +441,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
-                android:id="@+id/tv_33"
-                android:layout_below="@+id/tv_31"
+                android:id="@+id/tv_register_caregiver_add1"
+                android:layout_below="@+id/tv_register_caregiver_confirmpassword"
                 android:layout_alignParentStart="true"
                 android:layout_marginTop="11dp"
                 android:textColor="@color/common_google_signin_btn_text_dark_focused" />
@@ -451,15 +451,15 @@
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:hint="address"
-                android:id="@+id/tv_34"
+                android:id="@+id/et_register_caregiver_add1"
                 android:scrollbarSize="108dp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
                 android:textSize="18sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignBaseline="@+id/tv_33"
-                android:layout_alignBottom="@+id/tv_33"
-                android:layout_toEndOf="@+id/tv_33"
+                android:layout_alignBaseline="@+id/tv_register_caregiver_add1"
+                android:layout_alignBottom="@+id/tv_register_caregiver_add1"
+                android:layout_toEndOf="@+id/tv_register_caregiver_add1"
                 android:textColor="?attr/actionMenuTextColor" />
 
             <TextView
@@ -467,8 +467,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
-                android:id="@+id/tv_35"
-                android:layout_below="@+id/tv_33"
+                android:id="@+id/tv_register_caregiver_add2"
+                android:layout_below="@+id/tv_register_caregiver_add1"
                 android:layout_alignParentStart="true"
                 android:layout_marginTop="11dp"
                 android:textColor="@color/common_google_signin_btn_text_dark_focused" />
@@ -477,23 +477,23 @@
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:hint="address"
-                android:id="@+id/tv_36"
+                android:id="@+id/et_register_caregiver_add2"
                 android:scrollbarSize="108dp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
                 android:textSize="18sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignBaseline="@+id/tv_35"
-                android:layout_alignBottom="@+id/tv_35"
-                android:layout_toEndOf="@+id/tv_35"
+                android:layout_alignBaseline="@+id/tv_register_caregiver_add2"
+                android:layout_alignBottom="@+id/tv_register_caregiver_add2"
+                android:layout_toEndOf="@+id/tv_register_caregiver_add2"
                 android:textColor="?attr/actionMenuTextColor"/>
 
             <Button
                 android:text="提交"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/button1"
-                android:layout_below="@+id/tv_35"
+                android:id="@+id/button"
+                android:layout_below="@+id/tv_register_caregiver_add2"
                 android:layout_centerHorizontal="true"
                 android:textSize="24sp"
                 android:textColor="@color/common_google_signin_btn_text_dark_focused"
@@ -509,10 +509,18 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorButtonNormal"
-        app:popupTheme="@style/AppTheme.PopupOverlay"
-        app:buttonGravity="top|bottom"
-        app:title="登記信息"
-        />
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay" >
 
+        <Button
+            android:text="<返回"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button3"
+            android:layout_weight="1"
+            android:textColor="@color/cardview_light_background"
+            android:background="?attr/colorPrimary"
+            android:textSize="24sp" />
+
+    </android.support.v7.widget.Toolbar>
 </RelativeLayout>

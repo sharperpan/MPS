@@ -30,8 +30,8 @@
     <string name="title_activity_maps">Map</string>
     <string name="title_activity_patient_information">病人信息</string>
     <string name="title_activity_news_detail">新聞詳情</string>
-    <string name="title_activity_reminder">reminderActivity</string>
-    <string name="title_activity_reminder_detail_pa">reminder_detail_paActivity</string>
+    <string name="title_activity_reminder">註冊信息</string>
+    <string name="title_activity_reminder_detail_pa">編輯信息</string>
     <string name="title_activity_reminder_detail_cg">reminder_detail_cgActivity</string>
     <string name="title_activity_go_home">地圖</string>
     <string name="title_activity_contact_">緊急聯絡</string>

@@ -7,30 +7,59 @@
     android:layout_height="match_parent"
     tools:context="hkust.mutualpatientsupport.NewsActivity">
 
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?attr/colorPrimary"
+            android:text="<返回"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="24sp" />
+
+    </android.support.v7.widget.Toolbar>
+
     <ViewFlipper
+        android:id="@+id/viewFlipper"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/viewFlipper">
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toolbar">
 
         <ImageButton
-            android:layout_height="match_parent"
-            app:srcCompat="@drawable/new1"
             android:id="@+id/imageButton_new1"
             android:layout_width="match_parent"
-            android:scaleType="fitXY" />
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/new1" />
 
         <ImageButton
+            android:id="@+id/imageButton_new2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:srcCompat="@drawable/new2"
-            android:id="@+id/imageButton_new2"
-            android:scaleType="fitXY" />
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/new2" />
     </ViewFlipper>
 
-    <ListView
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/viewFlipper">
+
+        <ListView
             android:id="@+id/news_list"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-        android:layout_below="@+id/viewFlipper" />
+            android:layout_height="wrap_content" />
+
+    </ScrollView>
 
 </RelativeLayout>
