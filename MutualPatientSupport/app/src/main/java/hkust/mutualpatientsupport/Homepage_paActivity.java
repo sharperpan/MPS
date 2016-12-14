@@ -60,7 +60,7 @@ public class Homepage_paActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();
-                intent.setClass(Homepage_paActivity.this, reminder_detail_cgActivity.class);
+                intent.setClass(Homepage_paActivity.this, reminder_detail_paActivity.class);
                 Homepage_paActivity.this.startActivity(intent);
             }
         });

@@ -32,7 +32,7 @@ public class RegisterActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
-        ((Button) findViewById(R.id.button_location)).setOnClickListener(new View.OnClickListener() {
+        ((Button) findViewById(R.id.button_register_upload)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 upload();
@@ -52,7 +52,10 @@ public class RegisterActivity extends AppCompatActivity {
         try {
             JSONObject jsonParams = new JSONObject();
             jsonParams.put("FirstName", FirstName);
-            jsonParams.put("Gender",Gender);
+            if (Gender.equals("man"))
+                jsonParams.put("Gender",1);
+            else
+                jsonParams.put("Gender",0);
             jsonParams.put("LastName", LastName);
             jsonParams.put("Phone",Phone);
             jsonParams.put("Email",Email);
@@ -88,9 +91,7 @@ public class RegisterActivity extends AppCompatActivity {
                         Toast.makeText(getApplicationContext(), "Something wrong", Toast.LENGTH_SHORT).show();
                         return;
                     }
-                    Intent intent = new Intent();
-                    intent.setClass(RegisterActivity.this, LoginActivity.class);
-                    RegisterActivity.this.startActivity(intent);
+                    showSimpleDialog("注册成功");
                     //To Do....Cookies,Redirect
 
                 }
@@ -112,7 +113,7 @@ public class RegisterActivity extends AppCompatActivity {
     }
     private void showSimpleDialog(String message) {
         builder=new AlertDialog.Builder(this);
-        builder.setTitle("登入失敗");
+        builder.setTitle("注册信息");
         builder.setMessage(message);
 
         //监听下方button点击事件
